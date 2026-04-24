@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Qholosha Trading and Projects (Pty) Ltd.">
+    <link rel="icon" type="image/png" href="assets/logo_img.png">
+    <title>Contact Us | Qholosha Trading & Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, #2A2A2D 100%);
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_img.png" alt="Qholosha Logo" class="logo-img">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="btn btn-primary nav-btn">Get a Quote</a>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container fade-up">
+            <h1>Contact Us</h1>
+            <p>Get in touch for consultations and project quotes.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section contact bg-light">
+        <div class="container contact-grid">
+            <div class="contact-info fade-up">
+                <div class="section-header">
+                    <span class="subtitle">Get in Touch</span>
+                    <h2>Request a Quote</h2>
+                    <p>Ready to start your next project? Contact us today for a comprehensive consultation and quote.</p>
+                </div>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ph-fill ph-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>073 412 5062</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ph-fill ph-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lehlononoqholosha@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ph-fill ph-map-pin"></i></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>1803 Extension 2, Impumelelo, Devon, 2260</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper fade-up delay-1">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="082 123 4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details / Message</label>
+                        <textarea id="message" rows="4" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo text-white">
+                    <img src="assets/logo_img.png" alt="Qholosha Logo" class="logo-img footer-logo">
+                </a>
+                <p>Making your vision a reality. Professional civil engineering and construction in Southern Africa.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Civil Engineering</a></li>
+                    <li><a href="services.html">Steel Reinforcing</a></li>
+                    <li><a href="services.html">RDP Housing</a></li>
+                    <li><a href="services.html">Road Construction</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container d-flex justify-between">
+                <p>&copy; <span id="year"></span> Qholosha Trading & Projects. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

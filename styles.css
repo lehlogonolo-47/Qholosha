@@ -346,6 +346,7 @@ img {
 
 .hero-actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -1023,8 +1024,27 @@ img {
     .mobile-toggle { display: block; }
     .nav-btn { display: none; }
     
+    /* Hero — natural height, no viewport lock */
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding-top: calc(var(--nav-height) + 48px);
+        padding-bottom: 60px;
+    }
+    .hero-content { max-width: 100%; }
     .hero-content h1 { font-size: 2.5rem; }
-    .hero { min-height: 500px; }
+    .hero-content p { font-size: 1rem; margin-bottom: 32px; }
+
+    /* Stop highlights from overlapping hero buttons */
+    .highlights {
+        transform: translateY(0);
+        margin-top: 0;
+    }
+    /* Undo the negative pull-up on the about section */
+    .about {
+        margin-top: 0;
+    }
+
     .section-header h2 { font-size: 2rem; }
     
     .portfolio-grid { grid-template-columns: 1fr; }
@@ -1039,7 +1059,18 @@ img {
     .highlight-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .highlight-item:last-child { border-bottom: none; }
     .mission-strategy { grid-template-columns: 1fr; }
-    .hero-actions { flex-direction: column; }
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-content h1 { font-size: 2rem; }
+    .badge { font-size: 0.75rem; }
 }
 
 /* Toast Notifications */
